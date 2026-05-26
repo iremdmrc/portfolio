@@ -1,4 +1,4 @@
-# Irem Demirci Portfolio
+# Tugba Irem Demirci Portfolio
 
 Personal portfolio website for Tugba Irem Demirci, featuring selected full-stack, AI, game development, hackathon, art club, and personal gallery work.
 
