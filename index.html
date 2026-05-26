@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Irem Demirci — Portfolio · Issue 01 · Computer Science student, full-stack developer, game developer, AI builder.">
+    <title>Irem Demirci · Full-Stack & Game Developer</title>
+
+    <!-- Fonts: Fraunces (variable serif) + Space Grotesk + Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== AMBIENT BG ===================== -->
+    <div class="bg-grain" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- ===================== MASTHEAD ===================== -->
+    <header class="masthead" id="nav">
+        <div class="masthead__inner">
+            <div class="masthead__left">
+                <a href="#home" class="brand">
+                    <span class="brand__star">✺</span>
+                    <span class="brand__name">Irem Demirci</span>
+                </a>
+                <span class="brand__sub">Portfolio · Issue 01</span>
+            </div>
+
+            <nav class="primary-nav">
+                <a href="#about" class="primary-nav__link">About</a>
+                <a href="#work" class="primary-nav__link">Work</a>
+                <a href="#next" class="primary-nav__link">Next</a>
+                <a href="#tools" class="primary-nav__link">Tools</a>
+                <a href="#gallery" class="primary-nav__link">Gallery</a>
+                <a href="#contact" class="primary-nav__link primary-nav__link--cta">Contact ↗</a>
+            </nav>
+
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+        </div>
+        <div class="masthead__strip">
+            <span>Vol. 2026</span>
+            <span>·</span>
+            <span>Houston, TX</span>
+            <span>·</span>
+            <span>Full-Stack &amp; Game Developer</span>
+            <span>·</span>
+            <span class="masthead__live">●&nbsp; Available Summer 2026</span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#work" class="mobile-link">Work</a></li>
+            <li><a href="#next" class="mobile-link">Next</a></li>
+            <li><a href="#tools" class="mobile-link">Tools</a></li>
+            <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+            <li><a href="#chapters" class="mobile-link">Chapters</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="hero__grid">
+            <!-- Left rail -->
+            <aside class="hero__rail">
+                <div class="rail-block reveal">
+                    <span class="rail-block__label">Available</span>
+                    <span class="rail-block__value">Summer 2026</span>
+                </div>
+                <div class="rail-block reveal">
+                    <span class="rail-block__label">Based in</span>
+                    <span class="rail-block__value">Houston, TX</span>
+                </div>
+                <div class="rail-block reveal">
+                    <span class="rail-block__label">Focus</span>
+                    <span class="rail-block__value">Full-Stack · Games · <em>AI</em></span>
+                </div>
+                <div class="rail-block rail-block--now reveal">
+                    <span class="rail-block__label">★ Now</span>
+                    <span class="rail-block__value">Building <em>Framewise</em></span>
+                </div>
+            </aside>
+
+            <!-- Center -->
+            <div class="hero__center">
+                <div class="hero__kicker reveal">
+                    <span class="hero__kicker-dot"></span>
+                    A portfolio by a CS student · full-stack &amp; game developer
+                </div>
+                <h1 class="hero__title reveal">
+                    <span class="hero__line">She codes full-stack.</span>
+                    <span class="hero__line"><em>She designs games.</em></span>
+                    <span class="hero__line">She ships <strong>AI.</strong></span>
+                </h1>
+                <p class="hero__byline reveal">
+                    A growing body of work by <span class="byline-name">Tugba Irem Demirci</span> — full-stack developer, game developer, AI builder, and art club president at heart.
+                </p>
+                <div class="hero__actions reveal">
+                    <a href="#work" class="btn btn--solid">See the work →</a>
+                    <a href="./Irem-Demirci-Resume.docx" download class="btn btn--line"><i class="fas fa-file-arrow-down"></i> Resume</a>
+                    <a href="#contact" class="btn btn--line">Get in touch</a>
+                </div>
+            </div>
+
+            <!-- Right column / large number -->
+            <aside class="hero__numeral" aria-hidden="true">
+                <span class="numeral-text">26'</span>
+                <div class="numeral-tags">
+                    <span>· React</span>
+                    <span>· Gemini</span>
+                    <span>· Node.js</span>
+                    <span>· MongoDB</span>
+                    <span>· Unity</span>
+                    <span>· Python</span>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero__scroll reveal">
+            <span>Scroll</span>
+            <span class="hero__scroll-arrow">↓</span>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 01</span>
+                <h2 class="chapter-head__title">The author.</h2>
+                <span class="chapter-head__meta">An introduction · 3 min read</span>
+            </header>
+
+            <div class="about__grid">
+                <div class="about__intro">
+                    <p class="about__quote reveal">
+                        <span class="quote-mark">"</span>
+                        I'm <em>Irem</em> — a Computer Science student building full-stack apps, AI tools, and Unity games. I'd rather ship one weird, working thing than describe ten polished ideas.<span class="quote-mark quote-mark--close">"</span>
+                    </p>
+                </div>
+
+                <div class="about__body">
+                    <p class="reveal"><span class="dropcap">A</span>t twenty, I'm halfway through a B.S. in Computer Science at North American University, splitting my time between the CS Department where I work as a student, the Art Club I run as president, and the side of my desk where I keep breaking and rebuilding side projects.</p>
+                    <p class="reveal">My work lives in the overlap between <em>full-stack engineering</em>, <em>AI</em>, and <em>game development</em>: a Chrome extension that watches YouTube with you, a Unity horror game that listens for your noise, an AI study planner that summarizes your notes before your exam.</p>
+                    <p class="reveal">I'm currently looking for a Summer 2026 internship in full-stack development, game development, or AI engineering. If you read to the end, you'll know exactly what you're getting.</p>
+                </div>
+
+                <!-- Stats strip -->
+                <div class="stats reveal">
+                    <div class="stat">
+                        <span class="stat__num">13<sup>+</sup></span>
+                        <span class="stat__label">Public repos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">2</span>
+                        <span class="stat__label">Hackathon wins<br>at HackHCC</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">2<sup>nd</sup></span>
+                        <span class="stat__label">Rice Datathon<br>Education Track</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">20<sup>+</sup></span>
+                        <span class="stat__label">Students led<br>as Art Club President</span>
+                    </div>
+                </div>
+
+                <!-- Roles inline -->
+                <div class="roles reveal">
+                    <span class="roles__label">Currently wearing</span>
+                    <div class="roles__list">
+                        <span class="role-tag">CS Student</span>
+                        <span class="role-tag role-tag--accent">Full-Stack Developer</span>
+                        <span class="role-tag role-tag--accent">Game Developer</span>
+                        <span class="role-tag role-tag--accent">AI Builder</span>
+                        <span class="role-tag">Student Worker · CS Dept</span>
+                        <span class="role-tag">Art Club President</span>
+                        <span class="role-tag">ACM-W Vice President</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WORK ===================== -->
+    <section class="work section" id="work">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 02</span>
+                <h2 class="chapter-head__title">Selected <em>works.</em></h2>
+                <span class="chapter-head__meta">Six projects · One philosophy: ship the thing</span>
+            </header>
+
+            <!-- BENTO GRID -->
+            <div class="bento">
+
+                <!-- Framewise — hero card -->
+                <article class="b-card b-card--feature reveal" data-key="framewise">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 01</span>
+                        <div class="b-card__awards">
+                            <span class="award-chip">🏆 MongoDB Atlas</span>
+                            <span class="award-chip">🏆 Best Use of AI</span>
+                            <span class="award-chip">HackHCC 2026</span>
+                        </div>
+                    </div>
+
+                    <div class="b-feature__layout">
+                        <div class="b-feature__visual">
+                            <div class="frame-mock">
+                                <div class="frame-mock__bar">
+                                    <span></span><span></span><span></span>
+                                    <code>framewise.app</code>
+                                </div>
+                                <div class="frame-mock__inner">
+                                    <div class="frame-mock__video">
+                                        <span class="frame-mock__play">▶</span>
+                                        <div class="frame-mock__timeline">
+                                            <i style="left: 18%"></i>
+                                            <i style="left: 42%"></i>
+                                            <i style="left: 67%"></i>
+                                            <i style="left: 88%"></i>
+                                        </div>
+                                    </div>
+                                    <div class="frame-mock__chat">
+                                        <p class="msg msg--user">What did she explain at 2:14?</p>
+                                        <p class="msg msg--ai">Gemini analyzed that segment — the core idea is...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-feature__body">
+                            <h3 class="b-card__title">Framewise</h3>
+                            <p class="b-card__tag">AI-powered video learning · Web + Chrome Extension</p>
+                            <p class="b-card__desc">An AI-powered video learning platform that turns any YouTube video into an interactive study session — with contextual chat, smart captions, AI quizzes, and live pose tracking for dance practice. Shared backend powers both the web app and a Chrome extension.</p>
+                            <ul class="b-card__list">
+                                <li>Gemini 2.5 analyzes video content for chat &amp; quizzes</li>
+                                <li>Chrome Manifest V3 extension overlays features on YouTube</li>
+                                <li>ElevenLabs voice + TensorFlow.js MoveNet for pose tracking</li>
+                                <li>MongoDB Atlas + JWT &amp; Google OAuth shared across surfaces</li>
+                            </ul>
+                            <div class="b-card__stack">
+                                <span class="pill">React 18</span>
+                                <span class="pill">Node.js</span>
+                                <span class="pill">MongoDB</span>
+                                <span class="pill pill--ai">Gemini 2.5</span>
+                                <span class="pill pill--ai">ElevenLabs</span>
+                                <span class="pill pill--ai">TensorFlow.js</span>
+                                <span class="pill">Chrome MV3</span>
+                            </div>
+                            <a href="https://github.com/iremdmrc/framewise" target="_blank" rel="noopener" class="b-card__link">
+                                <i class="fab fa-github"></i> Read the code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EchoArchitect -->
+                <article class="b-card reveal" data-key="echo">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 02</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--echo">
+                        <div class="ring"></div>
+                        <div class="ring ring--2"></div>
+                        <div class="ring ring--3"></div>
+                        <div class="ring ring--4"></div>
+                        <span class="ring-emoji">🔊</span>
+                    </div>
+                    <h3 class="b-card__title">EchoArchitect</h3>
+                    <p class="b-card__tag">Sound-driven Unity horror · C#</p>
+                    <p class="b-card__desc">A first-person horror game where the monster <em>listens</em>. Your microphone input feeds its AI — stay silent or get caught.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">Unity 2022</span>
+                        <span class="pill">C#</span>
+                        <span class="pill pill--ai">Audio AI</span>
+                    </div>
+                    <a href="https://github.com/iremdmrc/EchoArchitect" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                </article>
+
+                <!-- iRemind -->
+                <article class="b-card reveal" data-key="iremind">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 03</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--iremind">
+                        <div class="float-card f1">📅 Study Plan</div>
+                        <div class="float-card f2">📄 AI Summary</div>
+                        <div class="float-card f3">✓ Reminder</div>
+                    </div>
+                    <h3 class="b-card__title">iRemind</h3>
+                    <p class="b-card__tag">AI study planner · Full-stack</p>
+                    <p class="b-card__desc">An AI-powered study planner that summarizes uploaded files and keeps students on track with secure auth and a clean React UI.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">React</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill pill--ai">AI Summaries</span>
+                    </div>
+                    <a href="https://github.com/iremdmrc/iremind-planner-application" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                </article>
+
+                <!-- BridgeFlow -->
+                <article class="b-card reveal" data-key="bridge">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 04</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--bridge">
+                        <div class="flow-chain">
+                            <span class="chain-box">Patient</span>
+                            <span class="chain-arrow">→</span>
+                            <span class="chain-box chain-box--ai">AI Agent</span>
+                            <span class="chain-arrow">→</span>
+                            <span class="chain-box">EHR</span>
+                        </div>
+                    </div>
+                    <h3 class="b-card__title">BridgeFlow AI</h3>
+                    <p class="b-card__tag">Healthcare automation · Amazon Nova</p>
+                    <p class="b-card__desc">AI agent bridging modern automation with legacy EHR workflows — safe patient registration powered by Amazon Nova.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">Python</span>
+                        <span class="pill pill--ai">Amazon Nova</span>
+                        <span class="pill pill--ai">AI Agents</span>
+                    </div>
+                    <a href="https://github.com/iremdmrc/bridgeflow-ai" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                </article>
+
+                <!-- Datathon -->
+                <article class="b-card reveal" data-key="datathon">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 05</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--medal">
+                        <span class="big-medal">🥈</span>
+                        <span class="medal-caption">2<sup>nd</sup> Place<br>Rice Datathon</span>
+                    </div>
+                    <h3 class="b-card__title">OpenStax Datathon</h3>
+                    <p class="b-card__tag">Education track · NLP</p>
+                    <p class="b-card__desc">An AI system that aligns educational content with learning objectives. Second place at Rice University.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">Python</span>
+                        <span class="pill">Jupyter</span>
+                        <span class="pill pill--ai">NLP</span>
+                    </div>
+                    <a href="https://github.com/iremdmrc/datathon-openstax" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                </article>
+
+                <!-- Silent Signal -->
+                <article class="b-card reveal" data-key="silent">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 06</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--silent">
+                        <div class="signal-bars">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </div>
+                    </div>
+                    <h3 class="b-card__title">Silent Signal</h3>
+                    <p class="b-card__tag">United Hacks V6 · Empathy-first UX</p>
+                    <p class="b-card__desc">A web app that helps people express how they feel without words — turning emotions into a visual signal and an empathy-first response.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">React</span>
+                        <span class="pill">Node.js</span>
+                    </div>
+                    <a href="https://github.com/iremdmrc/silent-signal" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                </article>
+
+                <!-- Ghibli Guardians -->
+                <article class="b-card reveal" data-key="ghibli">
+                    <div class="b-card__pre">
+                        <span class="b-card__pre-num">№ 07</span>
+                        <span class="b-card__pre-year">2026</span>
+                    </div>
+                    <div class="b-card__visual b-card__visual--ghibli">
+                        <span class="ghibli-emoji">🌿</span>
+                        <span class="ghibli-emoji ghibli-emoji--2">✨</span>
+                        <span class="ghibli-emoji ghibli-emoji--3">🛡️</span>
+                    </div>
+                    <h3 class="b-card__title">Ghibli Guardians</h3>
+                    <p class="b-card__tag">Safety companion · Hackathon project</p>
+                    <p class="b-card__desc">A safety companion app using Studio Ghibli-inspired characters to help individuals feel secure in uncertain environments — comfort meets utility.</p>
+                    <div class="b-card__stack">
+                        <span class="pill">JavaScript</span>
+                        <span class="pill pill--ai">Character AI</span>
+                        <span class="pill">Hackathon</span>
+                    </div>
+                    <a href="https://devpost.com/iremdmrc?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fas fa-trophy"></i> DevPost
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="work__footer reveal">
+                <div class="work__footer-left">
+                    <span>End of selected works.</span>
+                </div>
+                <a href="https://devpost.com/iremdmrc?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener" class="btn btn--line">
+                    <i class="fas fa-trophy"></i> View hackathons on DevPost →
+                </a>
+            </div>
+
+            <aside class="devpost-panel reveal" aria-label="Devpost projects">
+                <div class="devpost-panel__intro">
+                    <span class="devpost-panel__eyebrow">Devpost archive</span>
+                    <h3>Hackathon work, collected.</h3>
+                    <p>My Devpost profile keeps the hackathon side of my portfolio in one place: public submissions, events, and achievements from fast-build weekends.</p>
+                    <a href="https://devpost.com/iremdmrc?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener" class="b-card__link">
+                        <i class="fas fa-up-right-from-square"></i> Open Devpost portfolio
+                    </a>
+                </div>
+                <div class="devpost-panel__stats">
+                    <span><strong>3</strong> Projects</span>
+                    <span><strong>11</strong> Hackathons</span>
+                    <span><strong>7</strong> Achievements</span>
+                </div>
+                <div class="devpost-panel__projects">
+                    <article>
+                        <span>01</span>
+                        <h4>Framewise</h4>
+                        <p>AI-powered video learning platform, web app, and Chrome extension.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h4>Silent Signal</h4>
+                        <p>Empathy-first emotional signal tool built during United Hacks V6.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h4>Ghibli Guardians</h4>
+                        <p>Safety companion concept blending comfort, character, and utility.</p>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ===================== WHAT'S NEXT (FUTURE PROJECTS) ===================== -->
+    <section class="next section" id="next">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 03</span>
+                <h2 class="chapter-head__title">What's <em>next.</em></h2>
+                <span class="chapter-head__meta">In the lab · Coming soon</span>
+            </header>
+
+            <div class="next__grid">
+
+                <article class="next-card reveal">
+                    <div class="next-card__header">
+                        <span class="next-card__num">/ Next 01</span>
+                        <span class="next-card__status">In ideation</span>
+                    </div>
+                    <div class="next-card__visual next-card__visual--horror">
+                        <div class="horror-fog"></div>
+                        <span class="horror-eye">👁️</span>
+                        <span class="horror-text">UNREAL</span>
+                    </div>
+                    <h3 class="next-card__title">The Psychological Horror</h3>
+                    <p class="next-card__tag">Unreal Engine · Thriller game</p>
+                    <p class="next-card__desc">
+                        A psychological horror-thriller game built in <em>Unreal Engine</em> — exploring fear through atmosphere, sound, and slow-burning narrative rather than jump scares.
+                    </p>
+                    <div class="next-card__bullets">
+                        <span>Sound-driven environmental storytelling</span>
+                        <span>Atmosphere-first level design</span>
+                        <span>Mental-health-aware horror writing</span>
+                    </div>
+                    <div class="next-card__stack">
+                        <span class="pill">Unreal Engine 5</span>
+                        <span class="pill">C++ / Blueprints</span>
+                        <span class="pill">Game Design</span>
+                    </div>
+                </article>
+
+                <article class="next-card reveal">
+                    <div class="next-card__header">
+                        <span class="next-card__num">/ Next 02</span>
+                        <span class="next-card__status">Planned</span>
+                    </div>
+                    <div class="next-card__visual next-card__visual--health">
+                        <span class="health-heart">💗</span>
+                        <div class="health-rings">
+                            <span class="health-ring"></span>
+                            <span class="health-ring health-ring--2"></span>
+                        </div>
+                    </div>
+                    <h3 class="next-card__title">Hers — Cycle &amp; Care</h3>
+                    <p class="next-card__tag">Femtech · Mental health</p>
+                    <p class="next-card__desc">
+                        A two-in-one mobile app: <em>period tracking</em> for women and <em>mental support</em> for expectant mothers — built around evidence-based care, not anxiety-driven feeds.
+                    </p>
+                    <div class="next-card__bullets">
+                        <span>Cycle prediction with personal insights</span>
+                        <span>Mood &amp; symptom journaling</span>
+                        <span>Mental support modules for pregnancy</span>
+                    </div>
+                    <div class="next-card__stack">
+                        <span class="pill">React Native</span>
+                        <span class="pill">Node.js</span>
+                        <span class="pill pill--ai">Wellness AI</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TOOLS / STACK ===================== -->
+    <section class="tools section" id="tools">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 04</span>
+                <h2 class="chapter-head__title">The <em>toolkit.</em></h2>
+                <span class="chapter-head__meta">What I reach for · A working list</span>
+            </header>
+
+            <div class="tools__layout">
+
+                <div class="tools__col reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num">/ 01</span>
+                        <h4>Frontend</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>React</span><em>Vite · React Router</em></li>
+                        <li><span>TypeScript</span><em>ES6+ daily</em></li>
+                        <li><span>HTML &amp; CSS</span><em>Hand-written</em></li>
+                        <li><span>Chrome Extensions</span><em>Manifest V3</em></li>
+                    </ul>
+                </div>
+
+                <div class="tools__col reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num">/ 02</span>
+                        <h4>Backend</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>Node.js</span><em>Express</em></li>
+                        <li><span>REST APIs</span><em>JWT · OAuth</em></li>
+                        <li><span>PostgreSQL</span><em>Prisma ORM</em></li>
+                        <li><span>MongoDB</span><em>Atlas</em></li>
+                    </ul>
+                </div>
+
+                <div class="tools__col tools__col--ai reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num tools__col-num--ai">★ AI</span>
+                        <h4>AI &amp; Data</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>Gemini 2.5</span><em>LLM workflows</em></li>
+                        <li><span>ElevenLabs</span><em>Voice synthesis</em></li>
+                        <li><span>TensorFlow.js</span><em>MoveNet</em></li>
+                        <li><span>Amazon Nova</span><em>Agents</em></li>
+                    </ul>
+                </div>
+
+                <div class="tools__col tools__col--ai reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num tools__col-num--ai">★ Game</span>
+                        <h4>Game Dev</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>Unity 2022</span><em>2D &amp; 3D</em></li>
+                        <li><span>C#</span><em>Scripting</em></li>
+                        <li><span>Audio AI</span><em>Mic input</em></li>
+                        <li><span>ShaderLab</span><em>HLSL</em></li>
+                    </ul>
+                </div>
+
+                <div class="tools__col reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num">/ 05</span>
+                        <h4>Languages</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>JavaScript / TS</span><em>Daily driver</em></li>
+                        <li><span>Python</span><em>Data &amp; AI</em></li>
+                        <li><span>C / C# / Java</span><em>Multi-paradigm</em></li>
+                        <li><span>SQL</span><em>Relational modeling</em></li>
+                    </ul>
+                </div>
+
+                <div class="tools__col reveal">
+                    <div class="tools__col-head">
+                        <span class="tools__col-num">/ 06</span>
+                        <h4>Workflow</h4>
+                    </div>
+                    <ul class="tools__list">
+                        <li><span>Git / GitHub</span><em>Version control</em></li>
+                        <li><span>JIRA</span><em>Agile / SDLC</em></li>
+                        <li><span>Figma</span><em>Design handoff</em></li>
+                        <li><span>DSA &amp; OOP</span><em>Foundations</em></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 05</span>
+                <h2 class="chapter-head__title">A life <em>beyond code.</em></h2>
+                <span class="chapter-head__meta">A photo journal · Coming soon</span>
+            </header>
+
+            <!-- Group 01: Art Club -->
+            <div class="gal-group reveal">
+                <div class="gal-group__head">
+                    <span class="gal-group__num">01</span>
+                    <h3 class="gal-group__title">Art Club</h3>
+                    <span class="gal-group__meta">Events, exhibitions, &amp; the people who showed up</span>
+                </div>
+                <p class="gal-group__copy">A place for club meetings, workshops, campus art moments, and the community built around making things by hand.</p>
+                <div class="gal-grid">
+                    <figure class="gal-tile gal-tile--photo" data-cat="art"><img src="img/art-club-museum.jpeg" alt="Art Club museum visit group photo"><figcaption>Museum Visit</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="art"><img src="img/art-club-game-night.jpeg" alt="NAU Art Club game night group photo"><figcaption>Game Night</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="art"><img src="img/art-club-workshop.jpeg" alt="Art Club drawing workshop group photo"><figcaption>Drawing Workshop</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="art"><img src="img/art-club-picnic.jpeg" alt="Art Club outdoor picnic photo"><figcaption>Picnic Day</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Group 02: Hackathons -->
+            <div class="gal-group reveal">
+                <div class="gal-group__head">
+                    <span class="gal-group__num">02</span>
+                    <h3 class="gal-group__title">Hackathons</h3>
+                    <span class="gal-group__meta">17 hackathons · 2 wins · countless coffees</span>
+                </div>
+                <p class="gal-group__copy">Team photos, demo tables, award moments, late-night debugging, and the small chaos behind every submitted project.</p>
+                <div class="gal-grid">
+                    <figure class="gal-tile gal-tile--photo" data-cat="hack"><img src="img/hackathon-hackhers.jpeg" alt="HackHERs Spring 2026 event room"><figcaption>HackHERs Spring 2026</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="hack"><img src="img/hackathon-hackhcc.jpeg" alt="HackHCC CodeRunners presentation stage"><figcaption>HackHCC CodeRunners</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="hack"><img src="img/hackathon-friends.jpeg" alt="HackHERs photo booth selfie"><figcaption>HackHERs Moments</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="hack"><img src="img/hackathon-coding.jpeg" alt="Laptop coding during a hackathon session"><figcaption>Late-Night Coding</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Group 03: Personal & Travel -->
+            <div class="gal-group reveal">
+                <div class="gal-group__head">
+                    <span class="gal-group__num">03</span>
+                    <h3 class="gal-group__title">Travel &amp; Life</h3>
+                    <span class="gal-group__meta">Outside the editor window</span>
+                </div>
+                <p class="gal-group__copy">Travel, favorite places, everyday photos, and personal memories that make the portfolio feel like a whole person.</p>
+                <div class="gal-grid">
+                    <figure class="gal-tile gal-tile--photo" data-cat="life"><img src="img/life-brooklyn-bridge.jpeg" alt="Portrait on Brooklyn Bridge at night"><figcaption>Brooklyn Night</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="life"><img src="img/life-road-trip.jpeg" alt="Road trip portrait inside a car"><figcaption>Road Trip</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="life"><img src="img/life-flower-field.jpeg" alt="Portrait in a sunny flower field"><figcaption>Flower Field</figcaption></figure>
+                    <figure class="gal-tile gal-tile--photo" data-cat="life"><img src="img/life-mountain-snow.jpeg" alt="Portrait in snowy mountains"><figcaption>Mountain Day</figcaption></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CHAPTERS / JOURNEY ===================== -->
+    <section class="journey section" id="chapters">
+        <div class="container">
+            <header class="chapter-head reveal">
+                <span class="chapter-head__num">Chapter 06</span>
+                <h2 class="chapter-head__title">A short <em>history.</em></h2>
+                <span class="chapter-head__meta">Roles, leadership &amp; education</span>
+            </header>
+
+            <ol class="story">
+
+                <li class="story__item reveal">
+                    <div class="story__num">01</div>
+                    <div class="story__body">
+                        <div class="story__head">
+                            <span class="story__type">Work</span>
+                            <span class="story__date">Sep 2024 — Present</span>
+                        </div>
+                        <h3 class="story__role">Student Worker, <em>Computer Science Department</em></h3>
+                        <p class="story__org">North American University · Houston, TX</p>
+                        <p class="story__copy">Support academic technology initiatives, software-related departmental workflows, and student technical questions — bridging faculty needs and student resources within the CS program.</p>
+                    </div>
+                </li>
+
+                <li class="story__item reveal">
+                    <div class="story__num">02</div>
+                    <div class="story__body">
+                        <div class="story__head">
+                            <span class="story__type">Leadership</span>
+                            <span class="story__date">Aug 2025 — Present</span>
+                        </div>
+                        <h3 class="story__role">Vice President, <em>ACM-W</em></h3>
+                        <p class="story__org">Women in Computing · NAU</p>
+                        <p class="story__copy">Organize technical workshops and tech talks that promote peer learning, hackathon participation, and collaboration among women in computing.</p>
+                    </div>
+                </li>
+
+                <li class="story__item reveal">
+                    <div class="story__num">03</div>
+                    <div class="story__body">
+                        <div class="story__head">
+                            <span class="story__type">Leadership</span>
+                            <span class="story__date">Aug 2024 — Present</span>
+                        </div>
+                        <h3 class="story__role">President, <em>Art Club</em></h3>
+                        <p class="story__org">North American University</p>
+                        <p class="story__copy">Lead 20+ students in event planning, logistics, and cross-departmental communication — creating space for creativity during high-pressure academic periods.</p>
+                    </div>
+                </li>
+
+                <li class="story__item reveal">
+                    <div class="story__num">04</div>
+                    <div class="story__body">
+                        <div class="story__head">
+                            <span class="story__type">Education</span>
+                            <span class="story__date">2023 — May 2027</span>
+                        </div>
+                        <h3 class="story__role">B.S. <em>Computer Science</em></h3>
+                        <p class="story__org">North American University · Houston, TX</p>
+                        <p class="story__copy">Relevant coursework: Data Structures &amp; Algorithms, Software Engineering, Web Development, Database Systems. Certified in Frontend Web Development and United Hacks V6 participation.</p>
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <header class="chapter-head chapter-head--center reveal">
+                <span class="chapter-head__num">Chapter 07</span>
+            </header>
+
+            <div class="contact__inner">
+                <h2 class="contact__title reveal">
+                    Let's build <em>something</em><br>real together.
+                </h2>
+                <p class="contact__copy reveal">
+                    I'm hunting a <strong>Summer 2026 internship</strong> in full-stack development, game development, or AI engineering. If you have a role, a side project, or just want to talk shop — write to me.
+                </p>
+
+                <div class="contact__card reveal">
+                    <a href="mailto:iremdemircii61@gmail.com" class="contact__email">
+                        <span class="contact__email-label">Mail</span>
+                        <span class="contact__email-addr">iremdemircii61@gmail.com</span>
+                        <span class="contact__email-arrow">↗</span>
+                    </a>
+                    <a href="./Irem-Demirci-Resume.docx" download class="contact__resume">
+                        <span class="contact__email-label">Resume</span>
+                        <span class="contact__email-addr">Download .docx</span>
+                        <span class="contact__email-arrow"><i class="fas fa-file-arrow-down"></i></span>
+                    </a>
+                </div>
+
+                <div class="contact__lines reveal">
+                    <a href="https://github.com/iremdmrc" target="_blank" rel="noopener" class="contact__line">
+                        <span class="contact__line-tag">/01</span>
+                        <span class="contact__line-name">GitHub</span>
+                        <span class="contact__line-val">github.com/iremdmrc</span>
+                        <span class="contact__line-arrow">↗</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tugba-irem-demirci-6ab229327/" target="_blank" rel="noopener" class="contact__line">
+                        <span class="contact__line-tag">/02</span>
+                        <span class="contact__line-name">LinkedIn</span>
+                        <span class="contact__line-val">tugba-irem-demirci</span>
+                        <span class="contact__line-arrow">↗</span>
+                    </a>
+                    <a href="https://devpost.com/iremdmrc?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener" class="contact__line">
+                        <span class="contact__line-tag">/03</span>
+                        <span class="contact__line-name">DevPost</span>
+                        <span class="contact__line-val">17 hackathons · 2 wins</span>
+                        <span class="contact__line-arrow">↗</span>
+                    </a>
+                    <a href="https://www.instagram.com/mrsiiremd/" target="_blank" rel="noopener" class="contact__line">
+                        <span class="contact__line-tag">/04</span>
+                        <span class="contact__line-name">Instagram</span>
+                        <span class="contact__line-val">@mrsiiremd</span>
+                        <span class="contact__line-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="colophon">
+        <div class="container">
+            <div class="colophon__row">
+                <span class="colophon__name">© 2026 <em>Irem Demirci</em></span>
+                <a href="#home" class="colophon__back">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
